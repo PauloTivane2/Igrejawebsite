@@ -1,11 +1,20 @@
+# Igrejawebsite - Next.js (App Router)
 
-  # Igreja Institucional Website
+Arquitetura refatorada para um padrão **feature-based, modular e escalável**.
 
-  This is a code bundle for Igreja Institucional Website. The original project is available at https://www.figma.com/design/VnoLG9fFcQXUYXJmJuFvCY/Igreja-Institucional-Website.
+## Stack
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
 
-  ## Running the code
+## Scripts
+- `npm run dev`
+- `npm run build`
+- `npm run start`
 
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
+## Estrutura principal
+- `src/app`: rotas e layouts por segmento (`(site)` e `(admin)`)
+- `src/features`: domínio isolado por feature
+- `src/components`: componentes reutilizáveis de UI, layout e shared
+- `src/services`: serviços transversais (api/email/logger)
+- `src/lib`: utilitários e validações
