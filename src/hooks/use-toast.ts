@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { toast as sonnerToast } from "sonner";
 
 export interface ToastOptions {
